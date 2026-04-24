@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../p2p-page/p2p.css">
+    <link rel="stylesheet" href="../first-page/main.css">
+    <title>P2P</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper__header">
+                <a href="#" class="logo">NOVEX</a>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav class="menu">
+                    <div class="wrapper-menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link menu__link--hover">Торговля <img
+                                        src="../first-page/images/arrow-header-link.svg" alt=""></a>
+                                <div class="menu-dropdown">
+                                    <a href="#" class="dropdown-btn">P2P</a>
+                                </div>
+                            </li>
+                            <li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
+                        </ul>
+                        <div class="info__group-header mobile-move">
+
+                        </div>
+                    </div>
+
+
+                    <button class="login__header-btn login__header-btn--mobile">Войти</button>
+
+                </nav>
+
+                <button class="login__header-btn login__header-btn--mobile-two">Войти</button>
+
+                <div class="info__group-header">
+                    <div class="lang-select-header">
+                        <div class="lang-current-header">
+                            <span class="lang-text-header">RU</span>
+                            <span class="lang-arrow-header"><img src="../first-page/images/arrow-select-lang.svg"
+                                    alt=""></span>
+                        </div>
+
+                        <ul class="lang-list-header">
+                            <li data-lang="RU">RU</li>
+                            <li data-lang="EN">EN</li>
+                        </ul>
+                    </div>
+
+                    <button class="login__header-btn">Войти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="header-p2p">
+            <div class="container">
+                <div class="wrapper-header-p2p">
+                    <a href="#" class="p2p-link">P2P</a>
+                    <ul class="menu__header-p2p">
+                        <li class="item__p2p"><a href="#" class="p2p__menu-link">Мои ордера</a></li>
+                        <li class="item__p2p"><a href="#" class="p2p__menu-link">Мой профиль</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome-p2p">
+            <div class="container">
+                <h1 class="title__p2p">Торгуйте через P2P без комиссий</h1>
+                <div class="swap-btns-group-p2p">
+                    <button class="btn-swap-p2p btn-buy active">Купить</button>
+                    <button class="btn-swap-p2p btn-sell">Продать</button>
+                </div>
+                <div class="group-info-p2p">
+
+                    <div class="wrapper-select-info-p2p">
+                        <div class="main-content__wrapper-info-p2p">
+                            <div class="crypto-select" id="cryptoBox">
+                                <div class="selected-box" onclick="toggleDrop()">
+                                    <img id="cryptoIcon" class="icon" src="../p2p-page/images-p2p/usdt-logo.svg">
+                                    <span id="cryptoValue">USDT</span>
+                                    <div class="arrow" id="cryptoArrow"><img
+                                            src="../p2p-page/images-p2p/arrow-select.svg" alt=""></div>
+                                </div>
+                                <!-- Custom dropdown -->
+                                <div class="crypto-dropdown" id="cryptoDropdown">
+                                    <div class="crypto-item" data-value="USDT"
+                                        data-icon="../p2p-page/images-p2p/usdt-logo.svg">
+                                        <img src="../p2p-page/images-p2p/usdt-logo.svg"> USDT
+                                    </div>
+                                    <div class="crypto-item" data-value="ETH"
+                                        data-icon="../p2p-page/images-p2p/eth-logo.svg">
+                                        <img src="../p2p-page/images-p2p/eth-logo.svg"> ETH
+                                    </div>
+                                    <div class="crypto-item" data-value="BTC"
+                                        data-icon="../p2p-page/images-p2p/btc-logo.svg">
+                                        <img src="../p2p-page/images-p2p/btc-logo.svg"> BTC
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="currency-box">
+                                <input type="number" placeholder="0,00" class="amount-input">
+                                <div class="custom-select" id="countrySelect">
+                                    <div class="selected">
+                                        <img src="../p2p-page/images-p2p/usa-logo.svg" class="flag">
+                                        <span>USDT</span>
+                                        <div class="arrow"><img src="../p2p-page/images-p2p/arrow-select.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <div class="option" data-value="USDT"
+                                            data-flag="../p2p-page/images-p2p/usa-logo.svg">
+                                            <img src="../p2p-page/images-p2p/usa-logo.svg" class="flag"> USDT
+                                        </div>
+                                        <div class="option" data-value="RUB"
+                                            data-flag="../p2p-page/images-p2p/rus-logo.svg">
+                                            <img src="../p2p-page/images-p2p/rus-logo.svg" class="flag"> RUB
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-select" id="paymentBox">
+                                <div class="payment-selected">
+                                    <span id="paymentText">Все способы оплаты</span>
+                                    <div class="close-btn">✕</div>
+                                </div>
+                                <div class="payment-options">
+                                    <div class="payment-option" data-value="Все способы оплаты">Все способы оплаты</div>
+                                    <div class="payment-option payment-option--yellow" data-value="T-Банк">T-Банк</div>
+                                    <div class="payment-option payment-option--green" data-value="Сбербанк">Сбербанк
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="create-p2p-btn">Создать</button>
+                    </div>
+                </div>
+
+                <div class="wrapper-trade-p2p-1">
+                    <div class="group-one-trade-p2p">
+                        <p class="title-trade-p2p">Мейкеры</p>
+                        <ul class="trade__list">
+                            <li class="trade__item trade__item-name">KYPIKRIPTY</li>
+                            <div class="group-info-trader-p2p">
+                                <p class="text-info-trader-p2p">Транзакции 15 205</p>
+                                <p class="text-info-trader-p2p">Исполнено ордеров: 99.7%</p>
+                            </div>
+                        </ul>
+                        <ul class="trade__list">
+                            <li class="trade__item trade__item-name">PAVELDUROV</li>
+                            <div class="group-info-trader-p2p">
+                                <p class="text-info-trader-p2p">Транзакции 7 902</p>
+                                <p class="text-info-trader-p2p">Исполнено ордеров: 96.3%</p>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="group-two-trade-p2p">
+                        <p class="title-trade-p2p">Цена</p>
+                        <ul class="trade__list trade__list-curs">
+                            <li class="trade__item-curs">1,284 USD</li>
+                        </ul>
+                        <ul class="trade__list trade__list-curs">
+                            <li class="trade__item-curs">1,282 USD</li>
+                        </ul>
+                    </div>
+                    <div class="group-three-trade-p2p">
+                        <p class="title-trade-p2p">Доступный лимит / лимит для ордеров</p>
+                        <ul class="trade__list trade__list-order">
+                            <li class="trade__item-order">1 642,95 USDT</li>
+                            <li class="trade__item-order">10,00 – 1 638,02 $</li>
+                        </ul>
+                        <ul class="trade__list trade__list-order">
+                            <li class="trade__item-order">579,85 USDT</li>
+                            <li class="trade__item-order">5,00-743,94 USD</li>
+                        </ul>
+                    </div>
+                    <div class="group-four-trade-p2p">
+                        <p class="title-trade-p2p">Способы оплаты</p>
+                        <ul class="trade__list trade__list-payment">
+                            <li class="trade__item-payment trade__item-payment--green">СберБанк</li>
+                            <li class="trade__item-payment trade__item-payment--yellow">Т — банк</li>
+                        </ul>
+                        <ul class="trade__list trade__list-payment">
+                            <li class="trade__item-payment trade__item-payment--green">СберБанк</li>
+                            <li class="trade__item-payment trade__item-payment--yellow">Т — банк</li>
+                        </ul>
+                    </div>
+                    <div class="group-five-trade-p2p">
+                        <p class="title-trade-p2p title-trade-p2p--margin">Купить/продать</p>
+                        <ul class="trade__list trade__list-sell">
+                            <a href="#" class="link__sell">Продать</a>
+                        </ul>
+                        <ul class="trade__list trade__list-sell">
+                            <a href="#" class="link__sell">Продать</a>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-wrapper-trade-p2p-1">
+                        <div class="wrapper-group-trader-1">
+                            <div class="group-one-mobile-wrapper-trade">
+                                <p class="name-trader">KYPIKRIPTY</p>
+                                <div class="group-info-mobile">
+                                    <p class="text-mobile-p2p">Транзакции 15 205</p>
+                                    <p class="text-mobile-p2p">Исполнено ордеров: 99.7%</p>
+                                </div>
+                            </div>
+                            <div class="group-two-mobile-wrapper-trade">
+                                <p class="text-price-mobile-p2p">1,284 USD</p>
+                            </div>
+                            <div class="group-three-mobile-wrapper-trade">
+                                <p class="text-order-mobile-p2p">1 642,95 USDT</p>
+                                <p class="text-order-mobile-p2p">10,00–1 638,02 $</p>
+                            </div>
+                            <div class="group-four-mobile-wrapper-trade">
+                                <p class="trade__item-payment--green">СберБанк</p>
+                                <p class="trade__item-payment--yellow">Т — банк</p>
+                            </div>
+                            <div class="group-five-mobile-wrapper-trade">
+                                <a href="#" class="link__sell">Продать</a>
+                            </div>
+                        </div>
+                        <div class="wrapper-group-trader-2">
+                            <div class="group-one-mobile-wrapper-trade">
+                                <p class="name-trader">PAVELDUROV</p>
+                                <div class="group-info-mobile">
+                                    <p class="text-mobile-p2p">Транзакции 7 902</p>
+                                    <p class="text-mobile-p2p">Исполнено ордеров: 96.3%%</p>
+                                </div>
+                            </div>
+                            <div class="group-two-mobile-wrapper-trade">
+                                <p class="text-price-mobile-p2p">1,282 USD</p>
+                            </div>
+                            <div class="group-three-mobile-wrapper-trade">
+                                <p class="text-order-mobile-p2p">579,85 USDT</p>
+                                <p class="text-order-mobile-p2p">5,00-743,94 USD</p>
+                            </div>
+                            <div class="group-four-mobile-wrapper-trade">
+                                <p class="trade__item-payment--green">СберБанк</p>
+                                <p class="trade__item-payment--yellow">Т — банк</p>
+                            </div>
+                            <div class="group-five-mobile-wrapper-trade">
+                                <a href="#" class="link__sell">Продать</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="wrapper-trade-p2p-2">
+                    <div class="group-one-trade-p2p">
+                        <p class="title-trade-p2p">Мейкеры</p>
+                        <ul class="trade__list">
+                            <li class="trade__item trade__item-name">KYPIKRIPTY</li>
+                            <div class="group-info-trader-p2p">
+                                <p class="text-info-trader-p2p">Транзакции 15 205</p>
+                                <p class="text-info-trader-p2p">Исполнено ордеров: 99.7%</p>
+                            </div>
+                        </ul>
+                        <ul class="trade__list">
+                            <li class="trade__item trade__item-name">PAVELDUROV</li>
+                            <div class="group-info-trader-p2p">
+                                <p class="text-info-trader-p2p">Транзакции 7 902</p>
+                                <p class="text-info-trader-p2p">Исполнено ордеров: 96.3%</p>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="group-two-trade-p2p">
+                        <p class="title-trade-p2p">Цена</p>
+                        <ul class="trade__list trade__list-curs">
+                            <li class="trade__item-curs">1,284 USD</li>
+                        </ul>
+                        <ul class="trade__list trade__list-curs">
+                            <li class="trade__item-curs">1,282 USD</li>
+                        </ul>
+                    </div>
+                    <div class="group-three-trade-p2p">
+                        <p class="title-trade-p2p">Доступный лимит / лимит для ордеров</p>
+                        <ul class="trade__list trade__list-order">
+                            <li class="trade__item-order">1 642,95 USDT</li>
+                            <li class="trade__item-order">10,00 – 1 638,02 $</li>
+                        </ul>
+                        <ul class="trade__list trade__list-order">
+                            <li class="trade__item-order">579,85 USDT</li>
+                            <li class="trade__item-order">5,00-743,94 USD</li>
+                        </ul>
+                    </div>
+                    <div class="group-four-trade-p2p">
+                        <p class="title-trade-p2p">Способы оплаты</p>
+                        <ul class="trade__list trade__list-payment">
+                            <li class="trade__item-payment trade__item-payment--green">СберБанк</li>
+                            <li class="trade__item-payment trade__item-payment--yellow">Т — банк</li>
+                        </ul>
+                        <ul class="trade__list trade__list-payment">
+                            <li class="trade__item-payment trade__item-payment--green">СберБанк</li>
+                            <li class="trade__item-payment trade__item-payment--yellow">Т — банк</li>
+                        </ul>
+                    </div>
+                    <div class="group-five-trade-p2p">
+                        <p class="title-trade-p2p title-trade-p2p--margin">Купить/продать</p>
+                        <ul class="trade__list trade__list-sell">
+                            <a href="#" class="link__sell link__buy">Купить</a>
+                        </ul>
+                        <ul class="trade__list trade__list-sell">
+                            <a href="#" class="link__sell link__buy">Купить</a>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-wrapper-trade-p2p-1">
+                        <div class="wrapper-group-trader-1">
+                            <div class="group-one-mobile-wrapper-trade">
+                                <p class="name-trader">NOVEXNOVEX</p>
+                                <div class="group-info-mobile">
+                                    <p class="text-mobile-p2p">Транзакции 15 205</p>
+                                    <p class="text-mobile-p2p">Исполнено ордеров: 99.7%</p>
+                                </div>
+                            </div>
+                            <div class="group-two-mobile-wrapper-trade">
+                                <p class="text-price-mobile-p2p">0,997 USD</p>
+                            </div>
+                            <div class="group-three-mobile-wrapper-trade">
+                                <p class="text-order-mobile-p2p">1 642,95 USDT</p>
+                                <p class="text-order-mobile-p2p">10,00–1 638,02 $</p>
+                            </div>
+                            <div class="group-four-mobile-wrapper-trade">
+                                <p class="trade__item-payment--green">СберБанк</p>
+                                <p class="trade__item-payment--yellow">Т — банк</p>
+                            </div>
+                            <div class="group-five-mobile-wrapper-trade">
+                                <a href="#" class="link__sell link__buy">Купить</a>
+                            </div>
+                        </div>
+                        <div class="wrapper-group-trader-2">
+                            <div class="group-one-mobile-wrapper-trade">
+                                <p class="name-trader">PAVELDUROV</p>
+                                <div class="group-info-mobile">
+                                    <p class="text-mobile-p2p">Транзакции 7 902</p>
+                                    <p class="text-mobile-p2p">Исполнено ордеров: 96.3%%</p>
+                                </div>
+                            </div>
+                            <div class="group-two-mobile-wrapper-trade">
+                                <p class="text-price-mobile-p2p">0,923 USDp>
+                            </div>
+                            <div class="group-three-mobile-wrapper-trade">
+                                <p class="text-order-mobile-p2p">1 642,95 USDT</p>
+                                <p class="text-order-mobile-p2p">5,00–1 3 $</p>
+                            </div>
+                            <div class="group-four-mobile-wrapper-trade">
+                                <p class="trade__item-payment--green">СберБанк</p>
+                                <p class="trade__item-payment--yellow">Т — банк</p>
+                            </div>
+                            <div class="group-five-mobile-wrapper-trade">
+                                <a href="#" class="link__sell link__buy">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <button class="link__bot"><img src="../p2p-page/images-p2p/img-bot.svg" alt=""></button>
+
+    </main>
+
+</body>
+
+<script src="../p2p-page/p2p.js"></script>
+
+</html>

@@ -1,0 +1,868 @@
+.header-p2p {
+  margin-top: 40px;
+  margin-bottom: 129px;
+}
+.container {
+}
+.wrapper-header-p2p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper-trade-p2p-1 {
+  position: relative;
+}
+
+.wrapper-trade-p2p-1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  top: 26px;
+  left: 0;
+}
+
+.p2p-link {
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid #00cbff;
+  padding-bottom: 5px;
+  font-family: "Gilroy";
+}
+.menu__header-p2p {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+.item__p2p {
+  font-size: 14px;
+  font-family: "Gilroy";
+  font-weight: 700;
+}
+
+.p2p__menu-link {
+}
+
+.title__p2p {
+  font-size: 51px;
+  font-weight: 700;
+  font-family: Montserrat;
+  line-height: 100%;
+  text-align: center;
+  max-width: 630px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.swap-btns-group-p2p {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: -7px;
+}
+.btn-swap-p2p {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Gilroy";
+}
+
+.group-info-p2p {
+  margin-top: 30px;
+}
+
+/* Select */
+
+.crypto-select {
+  position: relative;
+  width: 110px;
+  cursor: pointer;
+}
+.selected-box {
+  width: 100%;
+  padding: 10px 15px 8.4px 42px;
+  border-radius: 9px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Gilroy";
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  position: relative;
+}
+.selected-box .icon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 12px;
+}
+.selected-box .arrow {
+  position: absolute;
+  right: 12px;
+  font-size: 13px;
+  transition: 0.25s;
+}
+.crypto-select.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.crypto-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 6px 0;
+  color: #000;
+  display: none;
+  z-index: 99;
+}
+.crypto-item {
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Gilroy";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.crypto-item img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.crypto-item:hover {
+  background: #f3f3f3;
+}
+
+/* Currency select */
+
+.currency-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2px 20px;
+  width: 220px;
+  gap: 10px;
+  position: relative;
+  font-family: "Gilroy";
+  color: #000;
+}
+
+.amount-input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #555;
+  width: 80px;
+}
+
+.custom-select {
+  position: relative;
+  width: 100px;
+  cursor: pointer;
+  user-select: none;
+  margin-left: -11px;
+}
+
+.custom-select .selected {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0px;
+}
+
+.custom-select .flag {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.custom-select .arrow {
+  margin-left: auto;
+  transition: 0.25s;
+}
+
+.custom-select.open .arrow {
+  transform: rotate(180deg);
+}
+
+.custom-select .options {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 120px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: none;
+  z-index: 10;
+}
+
+.custom-select.open .options {
+  display: block;
+  font-size: 14px;
+}
+
+.custom-select .option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.custom-select .option:hover {
+  background: #f2f2f2;
+}
+
+.arrow img {
+  width: 12px;
+  height: 12px;
+}
+
+.wrapper-select-info-p2p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.selected {
+  font-size: 14px;
+}
+
+/* Payment */
+
+.payment-select {
+  position: relative;
+  width: 260px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 5.5px 15px;
+  font-family: "Gilroy";
+  cursor: pointer;
+  color: #000;
+}
+
+.payment-selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.payment-selected span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.close-btn {
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+}
+
+.payment-select.open .close-btn {
+  transform: rotate(180deg);
+}
+
+.payment-options {
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.payment-select.open .payment-options {
+  display: block;
+}
+
+.payment-option {
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.payment-option--green {
+  position: relative;
+}
+
+.payment-option--green::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: 17px;
+  left: 9px;
+  background-color: #15ff00;
+}
+
+.payment-option--yellow {
+  position: relative;
+}
+
+.payment-option--yellow::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: 17px;
+  left: 9px;
+  background-color: #f6ff00;
+}
+
+.payment-option:hover {
+  background: #f2f2f2;
+}
+
+.main-content__wrapper-info-p2p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.create-p2p-btn {
+  padding: 12px 21px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 48px;
+  border: none;
+  cursor: pointer;
+  font-family: "Gilroy";
+  background-color: #fff;
+}
+
+/* Wrapper trade p2p */
+
+.welcome-p2p {
+  margin-bottom: 50px;
+}
+
+.wrapper-trade-p2p-1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 45px;
+}
+
+.wrapper-trade-p2p-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 45px;
+  position: relative;
+}
+
+.wrapper-trade-p2p-2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  top: 26px;
+  left: 0;
+}
+
+.group-one-trade-p2p {
+  display: flex;
+  flex-direction: column;
+}
+.title-trade-p2p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Gilroy";
+  color: #fff;
+  margin-bottom: 26px;
+}
+
+.trade__item-name {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Gilroy";
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.trade__list {
+  margin-bottom: 50px;
+}
+.trade__item {
+}
+.group-info-trader-p2p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.text-info-trader-p2p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.group-two-trade-p2p {
+}
+.trade__list-curs {
+  margin-bottom: 93px;
+}
+.trade__item-curs {
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 700;
+}
+.group-three-trade-p2p {
+}
+.trade__list-order {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.trade__item-order {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Gilroy";
+}
+.group-four-trade-p2p {
+}
+.trade__list-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-left: 10px;
+}
+.trade__item-payment {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Gilroy";
+}
+.trade__item-payment--green {
+  position: relative;
+}
+
+.trade__item-payment--green::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -7px;
+  width: 3px;
+  height: 8px;
+  background-color: #15ff00;
+}
+
+.trade__item-payment--yellow {
+  position: relative;
+}
+
+.trade__item-payment--yellow::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -7px;
+  width: 3px;
+  height: 8px;
+  background-color: #e1ff00;
+}
+.group-five-trade-p2p {
+}
+
+.title-trade-p2p--margin {
+  margin-bottom: 35px;
+}
+
+.trade__list-sell {
+  margin-bottom: 83px;
+}
+.link__sell {
+  padding: 12px 21px;
+  padding-bottom: 14px;
+  background-color: #ff3300;
+  border-radius: 48px;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0px 4px 128px 0px #ffffff21;
+
+  box-shadow: 0px 4px 64px 0px #ffffff14;
+}
+
+.link__buy {
+  background-color: #40ff00;
+  box-shadow: 0px 4px 128px 0px #ffffff21;
+
+  box-shadow: 0px 4px 64px 0px #ffffff14;
+}
+
+.btn-swap-p2p {
+  position: relative;
+}
+
+.btn-swap-p2p.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Полоска (всегда есть, но скрыта) */
+.btn-swap-p2p::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  bottom: -10px;
+  width: 88%;
+  height: 1px;
+  background: #ffffff;
+  border-radius: 2px;
+
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Активная */
+.btn-swap-p2p.active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Wrapper'ы */
+.wrapper-trade-p2p-1,
+.wrapper-trade-p2p-2 {
+  display: none;
+}
+
+.wrapper-trade-p2p-1.active,
+.wrapper-trade-p2p-2.active {
+  display: flex;
+}
+
+.mobile-wrapper-trade-p2p-1 {
+  display: none;
+}
+
+.link__bot {
+  position: absolute;
+  right: 44px;
+  bottom: 20px;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1700px) {
+  .link__bot {
+    position: absolute;
+    right: 9px;
+    bottom: -66px;
+  }
+}
+
+@media (max-width: 1088px) {
+  /* .wrapper-trade-p2p-2::after {
+    top: 45px;
+  } */
+
+  .group-info-trader-p2p {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+
+  .trade__list-curs {
+    margin-bottom: 103px;
+  }
+}
+
+@media (max-width: 935px) {
+  .title-trade-p2p {
+    display: none;
+  }
+
+  .wrapper-trade-p2p-2::after {
+    top: -29px;
+  }
+  .wrapper-trade-p2p-1::after {
+    top: -29px;
+  }
+
+  .trade__list-sell {
+    margin-bottom: 82px;
+  }
+
+  .group-five-trade-p2p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper-trade-p2p-2 {
+    display: none;
+  }
+
+  .link__bot {
+    display: none;
+  }
+
+  .welcome-p2p {
+    margin-bottom: 0;
+  }
+
+  .mobile-wrapper-trade-p2p-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .wrapper-group-trader-1,
+  .wrapper-group-trader-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .wrapper-group-trader-2 {
+    margin-bottom: 10px;
+  }
+
+  .link__sell {
+    padding: 8px 27px;
+    padding-bottom: 10px;
+    width: 184px;
+    display: flex;
+    background-color: #ff3300;
+    border-radius: 3px;
+    font-size: 14px;
+    justify-content: center;
+    color: #000;
+    font-weight: 700;
+    box-shadow: 0px 4px 128px 0px #ffffff21;
+    box-shadow: 0px 4px 64px 0px #ffffff14;
+  }
+
+  .link__buy {
+    background-color: #40ff00;
+    box-shadow: 0px 4px 128px 0px #ffffff21;
+
+    box-shadow: 0px 4px 64px 0px #ffffff14;
+  }
+
+  .name-trader {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .text-mobile-p2p {
+    font-size: 14px;
+  }
+
+  .text-price-mobile-p2p,
+  .text-order-mobile-p2p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .trade__item-payment--yellow,
+  .trade__item-payment--green {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .group-info-mobile {
+    display: flex;
+    gap: 15px;
+  }
+
+  .group-four-mobile-wrapper-trade {
+    display: flex;
+    gap: 25px;
+    margin-left: 8px;
+  }
+
+  .group-three-mobile-wrapper-trade {
+    display: flex;
+    gap: 15px;
+  }
+
+  .group-one-trade-p2p,
+  .group-two-trade-p2p,
+  .group-three-trade-p2p,
+  .group-four-trade-p2p,
+  .group-five-trade-p2p {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .wrapper-select-info-p2p {
+    flex-wrap: wrap;
+  }
+
+  .create-p2p-btn {
+    padding: 9px 27px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Gilroy";
+    background-color: #fff;
+  }
+
+  .payment-select {
+    width: 220px;
+    padding: 7.5px 15px;
+  }
+
+  .close-btn {
+    width: 21px;
+    height: 21px;
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+  }
+
+  .currency-box {
+    width: 215px;
+  }
+}
+
+@media (max-width: 620px) {
+  .main-content__wrapper-info-p2p {
+    flex-wrap: wrap;
+  }
+
+  .title__p2p {
+    max-width: none;
+    width: 100%;
+    font-size: 42px;
+  }
+
+  .header-p2p {
+    margin-bottom: 50px;
+  }
+
+  .swap-btns-group-p2p {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 520px) {
+  .title__p2p {
+    font-size: 32px;
+  }
+
+  .payment-selected span {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .payment-option {
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .create-p2p-btn {
+    display: flex;
+    width: 221px;
+    justify-content: center;
+  }
+
+  .wrapper-select-info-p2p,
+  .main-content__wrapper-info-p2p {
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile-wrapper-trade-p2p-1 {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .selected-box {
+    padding: 6px 15px 6.4px 42px;
+    border-radius: 5px;
+  }
+
+  .custom-select .selected {
+    padding: 3.5px 0px;
+  }
+
+  .create-p2p-btn {
+    padding: 7px 27px;
+  }
+
+  .menu__header-p2p {
+    gap: 18px;
+  }
+
+  .currency-box {
+    border-radius: 5px;
+    width: 207px;
+  }
+
+  .payment-select {
+    padding: 5.5px 15px;
+    border-radius: 5px;
+  }
+
+  .link__sell {
+    padding: 5px 27px;
+    padding-bottom: 7px;
+  }
+
+  .wrapper-group-trader-1,
+  .wrapper-group-trader-2 {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 385px) {
+  .title__p2p {
+    font-size: 28px;
+  }
+
+  .group-info-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
